@@ -68,7 +68,7 @@ class _SpeedHomePageState extends State<SpeedHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Estimated Speed')),
+      appBar: AppBar(title: Text('Estimated Spkkjkhjeed')),
       body: Center(
         child: Text(
           '${_speed.toStringAsFixed(2)} m/s',
