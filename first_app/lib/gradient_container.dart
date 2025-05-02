@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:first_app/styled_text.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
 
   @override
-  Widget build(context) {
+  Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
         gradient: LinearGradient(
@@ -14,14 +15,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: Text(
-          'Olá Mundo',
-          style: TextStyle(
-            fontSize: 28.0,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        child: StyledText()
       ),
     );
   }
