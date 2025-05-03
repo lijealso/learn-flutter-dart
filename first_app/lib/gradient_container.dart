@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/styled_text.dart';
-<<<<<<< HEAD
+
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
-=======
->>>>>>> 1ce7d44f69bfa65608529f404dec888c1e1f6e38
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer(this.color1, this.color2, {super.key});
@@ -24,11 +22,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-<<<<<<< HEAD
         child: StyledText('Hello World!'),
-=======
-        child: StyledText()
->>>>>>> 1ce7d44f69bfa65608529f404dec888c1e1f6e38
       ),
     );
   }
