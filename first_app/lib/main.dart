@@ -17,7 +17,10 @@ class MyStatelessWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GradientContainer(),
+      body: GradientContainer(
+        const Color.fromARGB(255, 70, 120, 226),
+        const Color.fromARGB(255, 55, 25, 110),
+      ),
     );
   }
 }
