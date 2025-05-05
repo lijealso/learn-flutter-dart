@@ -44,7 +44,7 @@ class GradientContainer extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                print('Button Pressed!');
+                // print('Button Pressed!');
               },
               child: const Text(
                 'Start Quiz',
