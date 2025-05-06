@@ -10,4 +10,12 @@ class QuizQuestion {
 
   final String questionText;
   final List<String> answers;
+
+  List<String> getShuffledAnswers() {
+    // List.of creates a new list from the original list of answers.
+    // Shuffle the answers randomly and return the shuffled list.
+    final shuffledList = List.of(answers);
+    shuffledList.shuffle();
+    return shuffledList;
+  }
 }
