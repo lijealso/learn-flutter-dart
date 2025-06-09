@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
-
-import 'package:expense_tracker/widgets/new_expense.dart';
-import 'package:expense_tracker/widgets/expenses_list/expenses_list.dart';
-import 'package:expense_tracker/models/expense.dart';
 import 'package:expense_tracker/widgets/chart/chart.dart';
+import 'package:expense_tracker/widgets/new_expense.dart';
+import 'package:flutter/material.dart';
+import 'package:expense_tracker/models/expense.dart';
+import 'package:expense_tracker/widgets/expenses_list/expenses_list.dart';
 
 class Expenses extends StatefulWidget {
   const Expenses({super.key});
@@ -46,14 +45,15 @@ class _ExpensesState extends State<Expenses> {
 
   void _removeExpense(Expense expense) {
     final expenseIndex = _registeredExpenses.indexOf(expense);
+    
     setState(() {
       _registeredExpenses.remove(expense);
     });
     ScaffoldMessenger.of(context).clearSnackBars();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
+        content: const Text('Expense deleted!'),
         duration: const Duration(seconds: 3),
-        content: const Text('Expense deleted.'),
         action: SnackBarAction(
           label: 'Undo',
           onPressed: () {
@@ -85,6 +85,7 @@ class _ExpensesState extends State<Expenses> {
         actions: [
           IconButton(
             onPressed: _openAddExpenseOverlay,
+
             icon: const Icon(Icons.add),
           ),
         ],
@@ -92,9 +93,7 @@ class _ExpensesState extends State<Expenses> {
       body: Column(
         children: [
           Chart(expenses: _registeredExpenses),
-          Expanded(
-            child: mainContent,
-          ),
+          Expanded(child: mainContent),
         ],
       ),
     );
