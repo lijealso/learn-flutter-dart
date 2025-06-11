@@ -1,0 +1,27 @@
+digraph INFRA {
+  node [ color = "black", fillcolor = "#E6E6E6", height =1, style = "filled,bold,rounded", fontname = "Arial" ];
+  "flutter_windows.dll" [ label = "flutter_windows.dll
+(Flutter::Library)", shape =rectangle ];
+  "flutter_wrapper_plugin" [ label = "flutter_wrapper_plugin
+(Flutter::Wrapper::Plugin)", shape =rectangle ];
+  "flutter_wrapper_app" [ label = "flutter_wrapper_app
+(Flutter::Wrapper::App)", shape =rectangle ];
+  "libflutter_linux_gtk.so" [ label = "libflutter_linux_gtk.so
+(Flutter::Library)", shape =rectangle ];
+  "GTK" [ label = "GTK
+(System::Library)", shape =rectangle ];
+  "GLIB" [ label = "GLIB
+(System::Library)", shape =rectangle ];
+  "GIO" [ label = "GIO
+(System::Library)", shape =rectangle ];
+  "flutter" [ label = "flutter
+(Flutter::Interface)", shape =rectangle ];
+  "MealsAndroidApp" [ label = "MealsAndroidApp
+(Android::Application)", shape =rectangle, fillcolor = "#B7E0FF" ];
+  "flutter_wrapper_plugin" -> "flutter_windows.dll";
+  "flutter_wrapper_app" -> "flutter_windows.dll";
+  "flutter" -> "libflutter_linux_gtk.so";
+  "flutter" -> "GTK";
+  "flutter" -> "GLIB";
+  "flutter" -> "GIO";
+}
