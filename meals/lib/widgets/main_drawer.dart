@@ -19,6 +19,7 @@ class MainDrawer extends StatelessWidget {
                   Theme.of(context)
                       .colorScheme
                       .primaryContainer
+                      // ignore: deprecated_member_use
                       .withOpacity(0.8),
                 ],
                 begin: Alignment.topLeft,
