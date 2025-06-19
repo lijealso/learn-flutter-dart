@@ -1,4 +1,5 @@
 {
     "CodeGPT.apiKey": "Github Copilot",
-    "zencoder.enableRepoIndexing": true
+    "zencoder.enableRepoIndexing": true,
+    "cmake.sourceDirectory": "D:/GitHub/learn-flutter-dart/bug_app/windows"
 }
