@@ -49,7 +49,7 @@ class _MapScreenState extends State<MapScreen> {
           GoogleMap(
             onTap: widget.isSelecting
                 ? (position) {
-                    print(
+                    debugPrint(
                       'Map tapped at: ${position.latitude}, ${position.longitude}',
                     );
                     setState(() {
