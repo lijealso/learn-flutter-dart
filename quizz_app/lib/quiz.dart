@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quizz_app/start_screen.dart';
 import 'package:quizz_app/questions_screen.dart';
+import 'package:quizz_app/start_screen.dart';
 
 /// A widget that represents the Quiz application.
 ///
@@ -48,10 +48,7 @@ class _QuizState extends State<Quiz> {
           // Apply a gradient background decoration to the quiz interface.
           decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 67, 46, 116),
-                Color.fromARGB(255, 172, 124, 190),
-              ],
+              colors: [Color.fromARGB(255, 67, 46, 116), Color.fromARGB(255, 172, 124, 190)],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
